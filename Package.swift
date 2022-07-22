@@ -1,18 +1,21 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 import PackageDescription
 
 let package = Package(
     name: "bus-stops",
+    platforms: [
+        .macOS(.v10_15)
+    ],
     dependencies: [
-        .package(name: "WMATA", url: "https://github.com/emma-k-alexandra/WMATA.swift", from: "8.4.2"),
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.2")
+        .package(url: "https://github.com/emma-k-alexandra/WMATA.swift", from: "14.0.0"),
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.1.3")
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "bus-stops",
             dependencies: [
-                "WMATA",
+                .product(name: "WMATA", package: "WMATA.swift"),
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
             ]),
         .testTarget(

@@ -1,43 +1,32 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "GTFS",
-        "repositoryURL": "https://github.com/emma-k-alexandra/GTFS.git",
-        "state": {
-          "branch": null,
-          "revision": "c4ead92be39de76ec5a8f6dc591f2b7095f19e08",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "swift-argument-parser",
-        "repositoryURL": "https://github.com/apple/swift-argument-parser",
-        "state": {
-          "branch": null,
-          "revision": "9564d61b08a5335ae0a36f789a7d71493eacadfc",
-          "version": "0.3.2"
-        }
-      },
-      {
-        "package": "SwiftProtobuf",
-        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
-        "state": {
-          "branch": null,
-          "revision": "e1904bf5a5f79cb7e0ff68a427a53a93b652fcd1",
-          "version": "1.15.0"
-        }
-      },
-      {
-        "package": "WMATA",
-        "repositoryURL": "https://github.com/emma-k-alexandra/WMATA.swift",
-        "state": {
-          "branch": null,
-          "revision": "5ebce31aa361c189a2e37d3c0acd9fdeac01fb6b",
-          "version": "8.4.2"
-        }
+  "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "df9ee6676cd5b3bf5b330ec7568a5644f547201b",
+        "version" : "1.1.3"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swift-protobuf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-protobuf.git",
+      "state" : {
+        "revision" : "e1499bc69b9040b29184f7f2996f7bab467c1639",
+        "version" : "1.19.0"
+      }
+    },
+    {
+      "identity" : "wmata.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/emma-k-alexandra/WMATA.swift",
+      "state" : {
+        "revision" : "189ba0a82a3743a6d88608d5fc7c6ec26c9ccce8",
+        "version" : "14.0.0"
+      }
+    }
+  ],
+  "version" : 2
 }
